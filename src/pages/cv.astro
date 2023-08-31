@@ -28,7 +28,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
     <div class="container left">
       <div class="content">
-        <h4>2019 Jan - 2019 Sept</h4>
+        <h4>Jan-Sept 2019</h4>
         <p>Cisco Certified Network Associate [CCNA]</p><span
           style="float: right;">St. Paul University</span
         >
@@ -39,15 +39,130 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <p>Check out my CV for more</p>
         <button class="button-17" role="button"
           ><a
-            href="../../public/documents/KIPLANGAT KELVIN KIRUI CV.pdf" style="text-decoration: none;"
+            href="../../public/documents/KIPLANGAT KELVIN KIRUI CV.pdf"
+            style="text-decoration: none;"
             download>Download CV</a
           ></button
         >
       </div>
     </div>
   </div>
+  <div style="align-self: center;">
+    <h4 style="text-align: center; margin-top: 50px;">My Skills</h4>
+    <p style="text-align: center;margin-top: 10px;color:#1c0056">Below are the areas of my specialization when it comes to IT and technical skills</p>
+
+    <div class="row">
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text" style="margin-left: 1px;">Cyber Security</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">Javascript</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">Python</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">Java</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">PHP</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">HTML</span>
+      </div>
+      <div class="circle-pill">
+        <span id="circle"></span>
+        <span id="text">CSS</span>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
 <style>
+  /*global*/
+  .row {
+    padding: px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  /*style 4*/
+  .circle-pill {
+    color: #1c0056;
+    font-weight: 600;
+    margin: 15px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    background-color: #eef1f3;
+  }
+
+  #circle {
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-left: 3px;
+    margin-top: -1.5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #7611a6;
+  }
+
+  /*edit margin-left on #text per pill to make the text centered
+  different words need different left margins*/
+  #text {
+    margin-left: -25px;
+  }
+
+  
+
   .button-17 {
     align-items: center;
     appearance: none;
@@ -82,7 +197,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     width: auto;
     will-change: transform, opacity;
     z-index: 0;
-	margin-top: 5px;
+    margin-top: 5px;
   }
 
   .button-17:hover {
