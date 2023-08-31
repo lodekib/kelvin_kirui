@@ -6,9 +6,9 @@ img_alt: Electronic point of sale
 description: |
   A POS curated for tracking of day to day transactional processes.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - PHP
+  - Mpesa
+  - C2B
 ---
 This Point of Sale (POS) feature serves as the technological backbone for retail and service establishments. It encopasses the following  functionalities  
  - transaction processing
