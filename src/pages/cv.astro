@@ -48,8 +48,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </div>
   <div style="align-self: center;">
-    <h4 style="text-align: center; margin-top: 50px;">My Skills and Certifications </h4>
-    <p style="text-align: center;margin-top: 10px;color:#1c0056">Below are the areas of my specialization when it comes to IT and technical skills</p>
+    <h4 style="text-align: center; margin-top: 50px;color:#7611a6">
+       Skills
+    </h4>
+    <p style="text-align: center;margin-top: 10px;color:#1c0056">
+      Below are the areas of my specialization when it comes to IT and technical
+      skills
+    </p>
 
     <div class="row">
       <div class="circle-pill">
@@ -82,8 +87,199 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </div>
   </div>
+
+  <div class="skills">
+    <div class="cert_container">
+      <div class="text">
+        <h2><span>Certifications</span></h2>
+      </div>
+
+      <div class="skill-card">
+        <div class="card">
+          <i class="fas fa-pencil-ruler"></i>
+          <h4>System Administration & IT Infrastructure services</h4>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-magic"></i>
+          <h4>NDG Linux Unhatched</h4>
+        </div>
+
+        <div class="card">
+          <i class="fab fa-sketch"></i>
+          <h4>Computer Networking Essentials</h4>
+        </div>
+
+        <div class="card">
+          <i class="fab fa-bitbucket"></i>
+          <h4>Programming Essentials in Python</h4>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <h4>Introduction to Cyber Security</h4>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-file-code"></i>
+          <h4>Google Foundation to Project Management</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
 <style>
+  /*certifications */
+
+  :root {
+    --main-color: #7611a6;
+    --second-color: #1b1b1b;
+    --third-color: #d4d4d4;
+    --bg-color: #7611a6;
+    --main-grid: repeat(auto-fill, minmax(300px, 1fr));
+    --main-padding: 40px;
+  }
+
+
+  .cert_container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .cert_container {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .cert_container {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .cert_container {
+      width: 1170px;
+    }
+  }
+
+  .skills {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    text-align: center;
+  }
+
+  .skills .text {
+    padding-bottom: 20px;
+  }
+
+  .skills h2 {
+    font-size: 35px;
+    color: var(--second-color);
+    padding-bottom: 20px;
+  }
+
+  .skills h2 span {
+    color: var(--main-color);
+  }
+
+  .skills p {
+    font-size: 18px;
+    color: var(--second-color);
+    font-weight: 400;
+  }
+
+  .skills .skill-card {
+    display: grid;
+    grid-template-columns: var(--main-grid);
+    grid-gap: 60px;
+    margin-bottom: 70px;
+    margin-top: 60px;
+  }
+
+  .skills .skill-card .card {
+    padding: 25px;
+    text-align: center;
+    background-color: var(--second-color);
+    border: 2px solid var(--main-color);
+    color: var(--third-color);
+    transition: 1s;
+    position: relative;
+  }
+
+  .skills .card h4 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .skills .card p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--third-color);
+  }
+
+  .skills .card i {
+    font-size: 42px;
+    padding: 15px;
+    width: 75px;
+    height: 75px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    position: absolute;
+    top: calc(-75px / 2);
+    transform: rotate(45deg);
+    left: 39%;
+    transition: 1s;
+    border: 1px solid var(--main-color);
+  }
+
+  .skills .card:hover {
+    background-color: transparent;
+  }
+
+  .skills .card:hover i {
+    transform: rotate(0deg);
+    background-color: var(--bg-color);
+  }
+
+  .skills .card:hover h4,
+  .skills .card:hover p {
+    color: var(--second-color);
+    transition: 1s;
+  }
+
+  .skills a {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 2px;
+    color: var(--second-color);
+    transition: background-color 0.8s;
+    padding: 12px 20px;
+    letter-spacing: 1.5px;
+    z-index: 50px;
+    text-decoration: none;
+  }
+
+  .skills a:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+  }
+
+
+  .hide1 {
+    display: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: var(--main-color);
+    font-size: 15px;
+  }
+
+  /*certs */
   /*global*/
   .row {
     padding: px;
@@ -161,8 +357,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   #text {
     margin-left: -25px;
   }
-
-  
 
   .button-17 {
     align-items: center;
